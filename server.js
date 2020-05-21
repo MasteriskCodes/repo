@@ -1841,6 +1841,11 @@ class Entity {
                 this.upgrades.push({ class: e, level: c.TIER_3, index: e.index,});
             });
         }
+        if (set.UPGRADES_TIER_4 != null) {
+            
+            
+            
+        }
         if (set.SIZE != null) {
             this.SIZE = set.SIZE * this.squiggle;
             if (this.coreSize == null) { this.coreSize = this.SIZE; }
