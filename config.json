@@ -29,7 +29,7 @@
   "ROOM_BOUND_FORCE": 0.01,
   "FOOD": [
     0, 
-    0.75,
+    0.9,
     0.22,
     0.1,
     0.005,
@@ -50,7 +50,7 @@
   "TIER_1": 10,
   "TIER_2": 25,
   "TIER_3": 45,
-  "TI"
+  "TIER_4": 60,
   "SKILL_CAP": 60,
   "SKILL_SOFT_CAP": 0,
   "SKILL_CHEAT_CAP": 60,
