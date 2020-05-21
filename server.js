@@ -1842,9 +1842,9 @@ class Entity {
             });
         }
         if (set.UPGRADES_TIER_4 != null) {
-            
-            
-            
+            set.UPGRADES_TIER_4.forEach((e) => {
+                this.upgrades.push({ class: e, level: c.TIER_3, index: e.index})
+            });
         }
         if (set.SIZE != null) {
             this.SIZE = set.SIZE * this.squiggle;
@@ -3385,7 +3385,7 @@ const sockets = (() => {
                     socket.camera.x = body.x; socket.camera.y = body.y; socket.camera.fov = 2000;
                     // Mark it as spawned
                     socket.status.hasSpawned = true;
-                    body.sendMessage('You have spawned! Welcome to the game.');
+                    body.sendMessage('You have spawned! Welcome to Masterisk\'s Server!');
                     body.sendMessage('You will be invulnerable until you move or shoot.');
                     // Move the client camera
                     socket.talk('c', socket.camera.x, socket.camera.y, socket.camera.fov);
@@ -3530,7 +3530,7 @@ const sockets = (() => {
                                 }
                             } 
                             if (player.body == null) { // u dead bro
-                                setFov = 2000;
+                                setFov = 4000;
                             }
                             // Smoothly transition view size
                             camera.fov += Math.max((setFov - camera.fov) / 30, setFov - camera.fov);    
