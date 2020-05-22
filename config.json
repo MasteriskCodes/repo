@@ -20,19 +20,21 @@
     [ "roid", "norm", "norm", "norm", "norm", "roid" ],
     [ "norm", "norm", "norm", "norm", "norm", "norm" ],
     [ "norm", "norm", "nest", "nest", "norm", "norm" ],
-    [ "norm", "norm", "nest", "roid", "norm", "norm" ]
+    [ "norm", "norm", "nest", "nest", "norm", "norm" ],
+    [ "norm", "norm", "norm", "norm", "norm", "norm" ],
+    [ "roid", "norm", "norm", "norm", "norm", "roid" ]
   ],
   "X_GRID": 6,
   "Y_GRID": 6,
   "DAMAGE_CONSTANT": 0.6,
   "KNOCKBACK_CONSTANT": 1,
-  "ROOM_BOUND_FORCE": 0.01,
+  "ROOM_BOUND_FORCE": 1,
   "FOOD": [
     0, 
     0.9,
     0.22,
     0.1,
-    0.005,
+    0.05,
     0,
     0
   ],
