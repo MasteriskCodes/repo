@@ -2404,13 +2404,13 @@ class Entity {
             });
             // Prepare it and clear the collision array.
             killText = killText.slice(0, -5);
-            if (killText === 'You have been kille') killText = 'You have died a stupid death';
+            if (killText === 'You have been kille') killText = 'You got drop kicked by a seal';
             this.sendMessage(killText + '.');
             // If I'm the leader, broadcast it:
             if (this.id === room.topPlayerID) {
-                let usurptText = (this.name === '') ? 'The leader': this.name;
+                let usurptText = (this.name === '') ? 'He who was chosen to lead': this.name;
                 if (notJustFood) { 
-                    usurptText += ' has been usurped by';
+                    usurptText += ' has been dethroned and defenestrated by';
                     killers.forEach(instance => {
                         usurptText += ' ';
                         usurptText += (instance.name === '') ? 'an unnamed player' : instance.name;
@@ -2419,7 +2419,7 @@ class Entity {
                     usurptText = usurptText.slice(0, -4);
                     usurptText += '!';
                 } else {
-                    usurptText += ' fought a polygon... and the polygon won.';
+                    usurptText += ' fell victim to one of Masterisk\'s pets.';
                 }
                 sockets.broadcast(usurptText);
             }
@@ -3386,7 +3386,7 @@ const sockets = (() => {
                     // Mark it as spawned
                     socket.status.hasSpawned = true;
                     body.sendMessage('You have spawned! Welcome to Masterisk\'s Server!');
-                    body.sendMessage('You will be invulnerable until you move or shoot.');
+                    body.sendMessage('Masterisk has granted you a time of invincibility for you to make your miserable life better.');
                     // Move the client camera
                     socket.talk('c', socket.camera.x, socket.camera.y, socket.camera.fov);
                     return player;
