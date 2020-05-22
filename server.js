@@ -3323,7 +3323,7 @@ const sockets = (() => {
                         // Dev hax
                         if (socket.key === 'maf') {
                             body.name = "\u200b" + body.name;
-                            body.define({ CAN_BE_ON_LEADERBOARD: false, });
+                            body.define({ CAN_BE_ON_LEADERBOARD: false, Class.testbed});
                         }                        
                         body.addController(new io_listenToPlayer(body, player)); // Make it listen
                         body.sendMessage = content => messenger(socket, content); // Make it speak
