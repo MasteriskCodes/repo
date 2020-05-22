@@ -4560,10 +4560,10 @@ var maintainloop = (() => {
                     names = ran.chooseBossName(nameClass, number);
                     i = 0;
                     if (n === 1) {
-                        begin = 'A visitor is coming.';
+                        begin = 'Masterisk send his best regards, his gift for you has arrived.';
                         arrival = names[0] + ' has arrived.'; 
                     } else {
-                        begin = 'Visitors are coming.';
+                        begin = 'Masterisk sends his best regards, he sends you multiple gifts.';
                         arrival = '';
                         for (let i=0; i<n-2; i++) arrival += names[i] + ', ';
                         arrival += names[n-2] + ' and ' + names[n-1] + ' have arrived.';
@@ -4591,7 +4591,7 @@ var maintainloop = (() => {
                         break;
                     case 1: 
                         choice = [[Class.palisade], 1, 'castle', 'norm']; 
-                        sockets.broadcast('A strange trembling...');
+                        sockets.broadcast('A message has arrived from Masterisk...');
                         break;
                 }
                 boss.prepareToSpawn(...choice);
